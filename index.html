@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>Mi primer página con Materialize CSS</title>
+  </head>
+  <body>
+   <div class="container">
+     <div class="row">
+       <div class="col s12">
+         <h1>formularios materialize</h1>
+       </div>
+     </div>
+     <div class="row">
+       <form>
+         <div class="col s12">
+           <div class="row">
+             <div class="input-fiel col s6">
+               <i class="material-icon prefix">perm_identity</i>
+               <input id="nombre" type="tex" class="validate">
+               <label for="nombre">nombre y apellidos</label>
+             </div>
+               <div class="input-fiel col s6">
+                 <i class="material-icon prefix">vpn_key</i>
+                 <input id="contrsena" type="password" class="validate">
+                 <label for="contrsena">contraseña</label>
+             </div>
+              <div class="input-fiel col s6">
+                <i class="material-icon prefix">email</i>
+                <input type="email" name="email" class="validate">
+                <label for="email" data-success="corecto" data-error="debes completar este campo">email</label>
+              </div>
+              <div class="input-fiel col s6">
+                <select class="browser-default" name="">
+                  <option value="" disabled selected>elige</option>
+                  <option value="1">opcion 1</option>
+                  <option value="2">opcion 2</option>
+                  <option value="3">opcion 3</option>
+                </select>
+              </div>
+              <div class="input-fiel col s6">
+                <p>
+                  <input id="masculino" type="radio" name="sexo" value="masculino" class="validate">
+                  <label for="masculino">masculino</label>
+                </p>
+                <p>
+                  <input id="femenino" type="radio" name="sexo" value="femenino" class="validate">
+                  <label for="femenino">femenino</label>
+                </p>
+              </div>
+              <div class="input-fiel col s6">
+                <p>
+                  <input type="checkbox" id="check1">
+                  <label for="check1">automovil</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="check2" checked="checked">
+                  <label for="check2">bus</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="check3" class="filled-in">
+                  <label for="check3">avion</label>
+                </p>
+              </div>
+              <div class="input-fiel col s6">
+                <div class="switch">
+                  <label>
+                    No
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Si
+                  </label>
+                </div>
+              </div>
+           </div>
+           <div class="row">
+             <div class="file-fiel input-fiel col s1">
+               <div class="btn">
+                 subir
+                 <input type="file">
+               </div>
+               <div class="file-path-wrapper">
+                 <input type="text" class="file-path validate">
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-fiel col s6">
+               <textarea id="texto" class="materialize-textarea"></textarea>
+               <label for="texto">texto</label>
+             </div>
+           </div>
+         </div>
+       </form>
+     </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a class="brand-logo left" href="#">logo</a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="index.html"> <i class="material-icon left">dashboard</i> inicio</a></li>
+            <li><a href="productos.html"> <i class="material-icon left">shopping_cart</i> productos</a></li>
+            <li><a href="servicios.html"> <i class="material-icon left">navigation</i> servicios</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col s12">
+                      <h1>botones</h1>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s4">
+                      <a class="btn btn-large teal waves-effect" href="#">boton 1</a>
+                    </div>
+                    <div class="col s4">
+                      <a class="btn-floating btn-large light-blue waves-effect" href="#"> <i class="material-icon">edit</i> </a>
+                  </div>
+                   <div class="col s4">
+                     <a href="#" class="btn-flat btn-large waves-effect"> <i class="material-icon">delete</i> </a>
+                   </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12">
+                      <ul class="pagination">
+                        <li class="disabled"> <a href="#"> <i class="material-icon">chevron_left</i> </a> </li>
+                        <li class="active"> <a href="#">1</a> </li>
+                        <li class="wave-effect"> <a href="#">2</a> </li>
+                        <li class="wave-effect"> <a href="#">3</a> </li>
+                        <li class="wave-effect"> <a href="#">4</a> </li>
+                        <li class="wave-effect"> <a href="#"> <i class="material-icon">chevron_right</i> </a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                   <div class="fixed-action-btn horizontal click-to-toggle" style="boton:50px; right:50px;">
+                     <a href="#" class="btn-floating blue"> <i class="material-icon">secttings</i> </a>
+                     <ul>
+                       <li><a href="#" class="btn-floating blue"> <i class="material-icon">edit</i> </a></li>
+                       <li><a href="#" class="btn-floating greem"> <i class="material-icon">edit</i> </a></li>
+                       <li><a href="#" class="btn-floating orange"> <i class="material-icon">edit</i> </a></li>
+                       <li><a href="#" class="btn-floating red"> <i class="material-icon">edit</i> </a></li>
+                     </ul>
+                   </div>
+                </div>
+
+    <div class="row">
+      <div class="col s6">
+        <div class="card light-blue darken-2 medium">
+          <div class="card-image wave-effect wave-block wave-light">
+            <img class="activator" src="imagen/descarga.jpg" alt="">
+          </div>
+           <div class="card-reveal">
+             <span class="card-title">otro titulo <i class="material-icon right">close</i> </span>
+             <p>otro texto de prueba</p>
+           </div>
+          <div class="card-content white-text">
+            <span class="card-title">soy el titulo</span>
+            <p>hola mundo</p>
+            <div class="card-action">
+              <a href="#">enlace1</a>
+              <a href="#">enlace2</a>
+              <a href="#">enlace3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="chip">
+          <img src="imagen/descarga.jpg" alt="flor">
+          hola
+        </div>
+        <div class="collection with-header">
+          <h4 class="collection-header">titulo</h4>
+          <a href="#" class="collection-item">iten 1</a>
+          <a href="#" class="collection-item">iten 2</a>
+          <a href="#" class="collection-item">iten 3</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
